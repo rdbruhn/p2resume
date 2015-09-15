@@ -1,0 +1,256 @@
+body,
+div,
+ul,
+li,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding:0;
+  margin:0;
+  font-family: "Roboto", sans-serif;
+}
+
+.clear-fix {
+  overflow: auto;
+}
+
+.education-entry,
+.work-entry,
+.project-entry {
+  padding: 0 5%;
+}
+
+#subWorkExp,
+#subEducation,
+#subProjects {
+  display: none;
+}
+
+h1 {
+  font-size: 40px;
+  color: #006699;
+  line-height: 48px;
+  display: inline;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 24px;
+  color: white;
+  background-color: #006699;
+  line-height: 29px;
+  border-style: solid;
+  border-bottom-color: white;
+}
+
+h2 A:link,
+h2 A:visited {
+ COLOR: white;
+}
+
+h2 A:hover {
+ COLOR: #800080;
+}
+
+h3 {
+  font-style: italic;
+  font-size: 20px;
+  color: #000;
+  line-height: 22px;
+}
+
+h4 {
+  font-weight: bold;
+  font-size: 14px;
+  color: #4a4a4a;
+  line-height: 17px;
+}
+
+h2,
+h4,
+h5 {
+  padding:10px 5%;
+}
+
+.expand {
+  font-weight: normal;
+  font-size: 14px;
+  color: white;
+  line-height: 17px;
+}
+
+.date-text {
+  font-style: italic;
+  font-size: 14px;
+  line-height: 17px;
+  float: left;
+}
+
+.location-text {
+  font-style: italic;
+  font-size: 14px;
+  line-height: 16px;
+  float: right;
+}
+
+#header { 
+  background: url(images/white.jpg); 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+p {
+  font-size: 14px;
+  line-height: 21px;
+}
+
+a {
+  text-decoration: none;
+  margin-top: 10px;
+  display: block;
+}
+
+.welcome-message {
+  font-style: italic;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+#skills-h3 {
+  color: #009999;
+}
+
+
+.blue-text {
+  color: #009999;
+}
+
+.bold-text {
+  font-weight: bold;
+}
+
+.flex-box {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+  text-align: center;
+}
+
+.center-content {
+  padding: 2.5% 5%;
+}
+
+ul {
+  list-style-type: none;
+}
+ul.a{
+  list-style-type: circle;
+}
+
+.biopic {
+  float: left;
+  padding: 10px;
+  width: 200px;
+}
+
+.projPic{
+  padding: 20px;
+  width: 150px;
+}
+
+img {
+  padding: 10px;
+  border-radius: 25px;
+}
+
+span {
+  padding: 5px;
+}
+
+#lets-connect {
+  text-align: center;
+  width:100%;
+}
+
+#topContacts A:link,
+#topContacts A:visited {
+  display: inline;
+  color: black;
+}
+
+#topContacts A:hover {
+  display: inline;
+  color: #800080;
+}
+
+#lets-connect A:link,
+#lets-connect A:visited {
+  display: inline;
+  color: black;
+}
+
+#lets-connect A:hover {
+  display: inline;
+  color: #800080;
+}
+
+/* Media queries to handle various device widths */
+@media only screen and (max-width: 1024px) {
+  .biopic{
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width:900px) {
+  .biopic {
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .biopic {
+    width: 150px;
+  }
+  .welcome-message {
+    display: none;
+  }
+}
+
+#map {
+  display: block;
+  height: 100%;
+  margin: 0 5%;
+}
+
+#subMap {
+  height: 400px;
+  width: 100%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+
+@media only screen and (min-width: 750px) {
+  #skills-h3,
+  .biopic {
+    display: block;
+  }
+}
+
+A:link {
+ COLOR: #009999; 
+}
+A:visited {
+ COLOR: #009999;
+}
+A:hover {
+ COLOR: #800080;
+}

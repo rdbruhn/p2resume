@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<head>
+
+  <meta charset="utf-8">
+
+  <title>Rob Bruhn's Resume</title>
+
+  <link href="css/style.css" rel="stylesheet">
+
+  <script src="js/jQuery.js"></script>
+
+  <script src="js/helper.js"></script>
+
+  <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?libraries=places"></script>
+
+
+  <meta name="viewport" content="width=device-width">
+</head>
+<body>
+
+  <!--Header Structure-->
+  
+  <div id="main">
+    <div id="header" class="center-content clear-fix">
+      <ul id="topContacts" class="flex-box"></ul><hr/>
+    </div>
+    <div style="clear: both;"></div>
+
+    <!--Sections-->
+
+    <div id="workExperience">
+      <h2 title="Click to expand/hide Work Experience"><a href="javascript:hideshow(document.getElementById('subWorkExp'))">Work Experience<span class= "expand">(Expand/Hide)</span></a></h2>
+
+      <!-- Added sub-sections for work, projects, education, and map sections to make hideshow() possible -->
+
+      <div id="subWorkExp"></div>
+    </div>
+    <div id="projects">
+      <h2 title="Click to expand/hide Projects"><a href="javascript:hideshow(document.getElementById('subProjects'))">Projects<span class= "expand">(Expand/Hide)</span></a></h2>
+      <div id="subProjects"></div>
+    </div>
+    <div id="education">
+      <h2 title="Click to expand/hide Education"><a href="javascript:hideshow(document.getElementById('subEducation'))">Education<span class= "expand">(Expand/Hide)</span></a></h2>
+      <div id="subEducation"></div>
+    </div>
+    <div id="mapDiv">
+      <h2 title="Click to expand/hide Map"><a href="javascript:hideshow(document.getElementById('subMap'))">Where I've Lived & Worked<span class= "expand">(Expand/Hide)</span></a></h2>
+      <div id="subMap"></div>
+    </div>
+
+    <!--Footer Structure-->
+
+    <div id="lets-connect">
+      <h2 class="blue center-text">Let's Connect</h2>
+        <ul id="footerContacts" class="flex-box">
+      </ul>
+    </div>
+  </div>
+
+    <!--javascript-->
+ 
+  <script src="js/resumeBuilder.js"></script>
+
+  <script type="text/javascript">
+
+//causes sections to black-out if no information is found in each section
+
+    if(document.getElementsByClassName('flex-item').length === 0) {
+      document.getElementById('topContacts').style.backgroundColor = "black";
+    }
+    if(document.getElementsByTagName('h1').length === 0) {
+      document.getElementById('header').style.backgroundColor = "black";
+    }
+    if(document.getElementsByClassName('work-entry').length === 0) {
+      document.getElementById('workExperience').style.backgroundColor = "black";
+    }
+    if(document.getElementsByClassName('project-entry').length === 0) {
+      document.getElementById('projects').style.backgroundColor = "black";
+    }
+    if(document.getElementsByClassName('education-entry').length === 0) {
+      document.getElementById('education').style.backgroundColor = "black";
+    }
+    if(document.getElementsByClassName('flex-item').length === 0) {
+      document.getElementById('letsConnect').style.backgroundColor = "black";
+      document.getElementById('lets-connect').style.display = 'none';
+    }
+    if(document.getElementById('map') === null) {
+      document.getElementById('mapDiv').style.backgroundColor = "black";
+    }
+  </script>
+</body>
+</html>
