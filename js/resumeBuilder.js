@@ -1,16 +1,16 @@
 var bio = {
     "name": "Rob Bruhn",
-    "role": "Front-End Web Developer & Student Ministry Director",
-    "welcome": "I'm seeking to finish my Udacity nanodegree, complete freelance projects, and continue training as a front-end web developer. I currently work with high school and middle school students in spiritual growth and leadership development. Thank you for checking out my resume! I'm always looking for new challenges.",
+    "role": "Prospective Web Developer & Student Ministry Director",
+    "welcome": "I'm seeking greater education in software engineering through online coursework, projects, and eventually bootcamp. I currently work with high school and middle school students in spiritual growth and leadership development. Thank you for checking out my resume! I'm always looking for new challenges.",
     "contacts": {
         "mobile": "610.314.5306",
         "email": "rdbruhn@gmail.com",
         "github": "rdbruhn",
-        "twitter": "rdbforgiven",
+        "twitter": "robbruhn",
         "location": "West Chester, PA"
     },
     "skills": ["HTML", "CSS", "JavaScript", "Microsoft Office", "iWork", "intermediate Chinese", "Guitar", "Teaching", "Writing"],
-    "biopic": "images/rob.jpg"
+    "biopic": "images/rob.png"
 }
 
 
